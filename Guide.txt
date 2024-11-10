@@ -1,0 +1,65 @@
+Get your guild id:
+!identify_guild: gives you the id of the guild and if you have not paid the bot will not work
+
+Manage balances:
+!bal @user: Retrieves and displays the balance of the mentioned user in an embedded message.
+
+!baladd @user amount: Adds a specified amount of balance to the mentioned user’s account. **MANAGE ROLES PERM**
+
+!balremove @user amount: Removes a specified amount of balance from the mentioned user’s account. **MANAGE ROLES PERM**
+
+
+Manage roles and balances:
+!createrole rolename color: Creates a new role with the specified name and optional color. **MANAGE ROLES PERM**
+
+!addrole rolename @user1 @user2 ...: Assigns an existing role to one or more mentioned users. **MANAGE ROLES PERM**
+
+!deleterole rolename: Deletes the specified role from the server. **MANAGE ROLES PERM**
+
+!baladdrole rolename amount: Adds the specified balance to all members who have the specified role. **MANAGE ROLES PERM**
+
+
+Get user info:
+!info @user: Displays information about the mentioned user, such as when they joined the server and their ID **ADMIN PERM**
+
+
+Albion Market:
+!items : Gives you a link to the item ID sheet to find your items
+
+!priceA ITEM_ID : Use the correct id, it will give you all recent sell/buy prices for all markets/cities. Asia server
+
+!priceE ITEM_ID : Use the correct id, it will give you all recent sell/buy prices for all markets/cities. Europe server
+
+!priceW ITEM_ID : Use the correct id, it will give you all recent sell/buy prices for all markets/cities. West server
+
+
+
+Ticket Tool:
+!setinstructions
+TEXT
+TEXT
+TEXT
+: Adds instructions to the ticket page **MANAGE ROLES PERM**
+EXAMPLE: !setinstructions 
+1.Don't break any rules
+2.Send screenshots of necessary things
+3.Don't act like a fool 
+
+!setcreatetext TEXT : Adds the specified text to the ticket people react to **MANAGE ROLES PERM**
+EXAMPLE: !setcreatetext React with the emoji below to open a ticket!
+
+!setrole @Staff : will give access to tickets to the specified role **MANAGE ROLES PERM**
+
+!createticket: Creates an embedded message where users can react with an emoji to open a support ticket channel afterwards you can delete your message. **MANAGE ROLES PERM**
+
+
+Auto Voice channel Creation:
+!channelcreate channel_id "role" category_name: Configures the bot to create a voice channel when a user joins a specified trigger channel. The new channel is created in the specified category with permissions set for the mentioned roles. **ADMIN PERM**
+EXAMPLE: !channelcreate 59234139219 @Member VoiceChannels
+
+
+Reaction roles:
+!reactionrole emoji @role message_id: Sets up a reaction role, where users reacting to a message with a specific emoji will be assigned a specified role. **ADMIN PERM**
+EXAMPLE: !reactionrole :red_circle: @Member 123456789123456
+
+
